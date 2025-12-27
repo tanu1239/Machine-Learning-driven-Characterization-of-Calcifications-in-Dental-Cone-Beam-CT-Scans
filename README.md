@@ -19,6 +19,8 @@ Allfeatures_Partialoutcomes_Model - A set of optimized multiclass classification
 Allfeatures_Stroke_Model - Optimized binary classification model to predict stroke trained on all extracted radiomic features
 Allfeatures_Surgery_Model - Optimized binary classification model to predict need for cardiac surgery, trained on all extracted radiomic features
 
+Feature_Selection_&_Initial_Training - Performs PCA and TSNE for visualization, computes information gain/mutual information (this is where features from information gain are computed and these features are used in the following models), and performs some preliminary SVM-based model training.
+
 InfoGainFeatures_Alloutcomes_Model - Initial Multiclass classification model to predict all selected outcomes trained on radiomic features selected through mutual information gain.
 
 InfoGainFeatures_Anticoagulants_Model - Optimized binary classification model to predict low levels of anticoagulants trained on radiomic features selected through mutual information gain.
@@ -60,5 +62,7 @@ Recursive_Feature_Elimination_Stroke - Recursive Feature Elimination procedure p
 Recursive_Feature_Elimination_hypertension - Recursive Feature Elimination procedure performed to identify features most useful for prediction of hypertension
 
 Recursive_Feature_Elimination_surgery - Recursive Feature Elimination procedure performed to identify features most useful for prediction of future need for cardiac surgery
+
+Final_Model_Optimizations - performs final hyperparameter tuning and model refinement on the best-performing pipelines (primarily RFE-based), consolidating results across outcomes, produces the finalized evaluation metrics and model configurations reported as the study’s final performance.
 
 
